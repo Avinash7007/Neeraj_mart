@@ -1,0 +1,6 @@
+{
+  "name": "Neeraj General Store",
+  "description": "An interactive grocery, electronics, and clothing hypermarket website for Neeraj General Store in Jalalpur Panwara, Kannauj. Featuring multi-category catalog, dynamic search, shopping cart, UPI & COD checkout, WhatsApp ordering (9935118811), SEO optimization, and a self-managed admin dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
