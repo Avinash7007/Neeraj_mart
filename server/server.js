@@ -19,7 +19,9 @@ await connectDB();
 await connectCloudinary();
 
 // Allow multiple origins
-const allowedOrigins = ['http://localhost:5173', 'https://greencart-sand.vercel.app'];
+// IMPORTANT: after deploying the frontend on Vercel, add its real URL here
+// (e.g. 'https://neeraj-mart.vercel.app') or API calls from production will be blocked by CORS.
+const allowedOrigins = ['http://localhost:5173'];
 
 app.post('/stripe', express.raw({type: 'application/json'}), stripeWebhooks);
 

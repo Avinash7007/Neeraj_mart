@@ -3,7 +3,10 @@ import Order from '../models/Order.js';
 import Stripe from 'stripe';
 import User from '../models/User.js';
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
+// Falls back to a placeholder key so the server doesn't crash on boot when
+// STRIPE_SECRET_KEY isn't set (online payments are disabled for launch; add
+// a real key later to re-enable the "Online Payment" option in the cart).
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || 'sk_test_placeholder_not_configured');
 
 // Place Order COD : /api/order/cod
 export const placeOrderCOD = async (req, res) => {

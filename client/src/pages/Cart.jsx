@@ -173,10 +173,12 @@ const Cart = () => {
 
                     <p className="text-sm font-medium uppercase mt-6">Payment Method</p>
 
-                    <select onChange={e => setPaymentOption(e.target.value)} className="w-full border border-gray-300 bg-white px-3 py-2 mt-2 outline-none">
-                        <option value="COD">Cash On Delivery</option>
-                        <option value="Online">Online Payment</option>
-                    </select>
+                    <div className="w-full border border-gray-300 bg-white px-3 py-2 mt-2 text-gray-600">
+                        Cash On Delivery
+                    </div>
+                    {/* Online payment via Stripe is temporarily disabled at launch.
+                        To re-enable it, set STRIPE_SECRET_KEY/STRIPE_WEBHOOK_SECRET on the
+                        backend and swap this back to a <select> with the "Online" option. */}
                 </div>
 
                 <hr className="border-gray-300" />

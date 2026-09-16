@@ -69,6 +69,9 @@ import vanilla_muffins_image from "./vanilla_muffins_image.png";
 import quinoa_image from "./quinoa_image.png";
 import brown_rice_image from "./brown_rice_image.png";
 import barley_image from "./barley_image.png";
+import electronics_icon from "./electronics_icon.svg";
+import mobile_accessories_icon from "./mobile_accessories_icon.svg";
+import clothing_icon from "./clothing_icon.svg";
 
 export const assets = {
   logo,
@@ -102,28 +105,34 @@ export const assets = {
 
 export const categories = [
   {
-    text: "Organic veggies",
-    path: "Vegetables",
+    text: "Groceries",
+    path: "Groceries",
     image: organic_vegitable_image,
     bgColor: "#FEF6DA",
   },
   {
-    text: "Fresh Fruits",
-    path: "Fruits",
-    image: fresh_fruits_image,
-    bgColor: "#FEE0E0",
+    text: "Daily Essentials",
+    path: "Essentials",
+    image: grain_image,
+    bgColor: "#F1E3F9",
   },
   {
-    text: "Cold Drinks",
-    path: "Drinks",
-    image: bottles_image,
-    bgColor: "#F0F5DE",
+    text: "Electronics",
+    path: "Electronics",
+    image: electronics_icon,
+    bgColor: "#E4ECFB",
   },
   {
-    text: "Instant Food",
-    path: "Instant",
-    image: maggi_image,
-    bgColor: "#E1F5EC",
+    text: "Mobile Accessories",
+    path: "Accessories",
+    image: mobile_accessories_icon,
+    bgColor: "#FDEBD3",
+  },
+  {
+    text: "Clothing",
+    path: "Clothing",
+    image: clothing_icon,
+    bgColor: "#F9E1F0",
   },
   {
     text: "Dairy Products",
@@ -132,16 +141,10 @@ export const categories = [
     bgColor: "#FEE6CD",
   },
   {
-    text: "Bakery & Breads",
-    path: "Bakery",
-    image: bakery_image,
-    bgColor: "#E0F6FE",
-  },
-  {
-    text: "Grains & Cereals",
-    path: "Grains",
-    image: grain_image,
-    bgColor: "#F1E3F9",
+    text: "Snacks",
+    path: "Snacks",
+    image: maggi_image,
+    bgColor: "#E1F5EC",
   },
 ];
 
@@ -180,23 +183,23 @@ export const footerLinks = [
 export const features = [
   {
     icon: delivery_truck_icon,
-    title: "Fastest Delivery",
-    description: "Groceries delivered in under 30 minutes.",
+    title: "Fast Home Delivery",
+    description: "Groceries to electronics, delivered fast across Kannauj.",
   },
   {
     icon: leaf_icon,
-    title: "Freshness Guaranteed",
-    description: "Fresh produce straight from the source.",
+    title: "Genuine Products",
+    description: "Quality checked before it leaves our store.",
   },
   {
     icon: coin_icon,
-    title: "Affordable Prices",
-    description: "Quality groceries at unbeatable prices.",
+    title: "Apna Store, Sasta Daam",
+    description: "Swadeshi aur sasta — unbeatable everyday prices.",
   },
   {
     icon: trust_icon,
-    title: "Trusted by Thousands",
-    description: "Loved by 10,000+ happy customers.",
+    title: "Trusted Local Store",
+    description: "Serving Jalalpur Panwara, Kannauj & nearby areas.",
   },
 ];
 

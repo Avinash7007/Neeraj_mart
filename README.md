@@ -1,31 +1,32 @@
-# 🛒 GreenCart – Online Grocery Store
+# 🛒 Neeraj General Store — Online Store
 
-GreenCart is a **full-stack MERN (MongoDB, Express, React, Node.js)** grocery app. Customers can browse products, manage a shopping cart, save addresses, and place orders via **Cash on Delivery (COD)** or **Stripe Online Payments**. Sellers/Admins can manage products and view all orders.
+**"Apna Store, Swadeshi Aur Sasta!"**
 
-👉 Live demo: [greencart-sand.vercel.app](https://greencart-sand.vercel.app)
+A full-stack MERN (MongoDB, Express, React, Node.js) e-commerce app for Neeraj General Store, Jalalpur Panwara, Kannauj. Customers can browse groceries, daily essentials, electronics, mobile accessories, clothing, dairy and snacks, manage a cart, save addresses, and place orders via Cash on Delivery. Sellers/Admins can manage products and view all orders.
+
+📞 Phone / WhatsApp: +91 99351 18811
+📍 Jalalpur Panwara, Kannauj – 209727
 
 ---
 
-##  Features
+## Features
 
-###  User
+### User
 - Register & login using JWT & cookies
 - Browse categories and products with offers
 - Add/remove items in the cart
 - Save delivery addresses
-- Checkout with:
-  - **Cash on Delivery (COD)**
-  - **Stripe Online Payment** (secure with webhook order updates)
-- View order history and real-time payment status
+- Checkout with Cash on Delivery (Stripe online payment is wired up in the code but disabled by default at launch — see `server/controllers/orderController.js`)
+- View order history
 
-###  Seller/Admin
+### Seller/Admin
 - Secure login (email + password via environment vars)
 - Add / edit / delete products (with images hosted on Cloudinary)
 - View all customer orders with payment status
 
 ---
 
-##  Tech Stack
+## Tech Stack
 
 | Layer      | Technology                          |
 |------------|--------------------------------------|
@@ -33,54 +34,14 @@ GreenCart is a **full-stack MERN (MongoDB, Express, React, Node.js)** grocery ap
 | Backend    | Node.js, Express, JWT auth           |
 | Database   | MongoDB Atlas with Mongoose ODM      |
 | Storage    | Cloudinary for product images        |
-| Payments   | Stripe Checkout & Webhooks           |
-| Hosting    | Vercel (frontend ), render (backend) |
-
----
-## 📸 Screenshots
-
-### 👤 User Side
-- **Home Page**
-  ![Home](./client/src/assets/Home.JPG)
-
-- **All Products Page**
-  ![All Products](./client/src/assets/all-products_page.JPG)
-
-- **Single Product Page**
-  ![Product Page](./client/src/assets/product_page.JPG)
-
-- **Related Products**
-  ![Related Products](./client/src/assets/related-product_page.JPG)
-
-- **Cart Page**
-  ![Cart](./client/src/assets/cart_page.JPG)
-
-- **Sign Up Page**
-  ![Sign Up](./client/src/assets/sign-up_page.JPG)
-
-- **Login Page**
-  ![Login](./client/src/assets/login_page.JPG)
-
-- **My Orders Page**
-  ![My Orders](./client/src/assets/my-orders_page.JPG)
-
-
-### 🛍️ Seller/Admin Side
-- **Seller Login**
-  ![Seller Login](./client/src/assets/seller-login_page.JPG)
-
-- **Seller Dashboard (Home)**
-  ![Seller Home](./client/src/assets/seller-home_page.JPG)
-
-- **Seller Product List**
-  ![Seller Product List](./client/src/assets/seller-productlist_page.JPG)
-
-- **Seller Orders**
-  ![Seller Orders](./client/src/assets/seller-orders_page.JPG)
+| Payments   | Stripe Checkout & Webhooks (disabled by default; COD only at launch) |
+| Hosting    | Vercel (frontend), Render (backend)  |
 
 ---
 
-## 📜 License
+## License
+
+This project is built on the open-source [GreenCart](https://github.com/antony-judu) template (MIT License, Copyright (c) 2025 Antony Judu), customized and rebranded for Neeraj General Store.
 
 MIT License
 
